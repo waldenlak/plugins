@@ -1,9 +1,9 @@
 :root{
     --white: #fff;
-    --grey: #bfbeb8;
+    --grey: #bbbdc7;
     --none: rgba(0,0,0,0);
     --yellow: #ffe4a4;
-    --main: #667eea;
+    --main: #7899f5;
     --style-border: 1px solid var(--card-border);
   }
    
@@ -19,6 +19,7 @@
   }
   
   [data-theme=dark] {
+    --main: #667eea;
     --lighttext: #f8c45d;
     --scrollbar: rgba(200, 200, 223, .4);
     --card-btn-bg: #30343f;
