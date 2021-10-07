@@ -4,9 +4,12 @@
     background: var(--card-bg);
     border-radius: 12px;
     display: flex;
+    justify-content: center;
+    text-align:center;
     white-space: nowrap;
     overflow: hidden;
     margin-bottom: 1rem;
+    font-size: 2em;
     border: var(--style-border);
   }
   
@@ -31,6 +34,8 @@
   }
   
   .categorybar-tip{
+    font-weight: lighter;
+    color: var(--scrollbar);
     margin: 0 1rem;
   }
   
@@ -50,13 +55,12 @@
   .categorybar-item a{
     padding: .1rem .8rem .3rem;
     margin: .3rem .8rem;
-    border-radius: 5px 5px 15px 15px;
-    font-size: 160%;
   }
   
   .categorybar-item:hover a{
     background: var(--main);
     color: var(--white);
+    border-radius: 5px 5px 15px 15px;
   }
   
   .categorybar-item.select a {
@@ -66,8 +70,7 @@
   }
   
   .categorybar-more{
-    margin-left: 1rem;
-    font-size: 160%;
+    margin: .3rem .8rem;
     align-self: center;
   }
 
