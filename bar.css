@@ -1,6 +1,6 @@
 /* 首页分类条展示 */
 #categorybar{
-    padding: .4rem 1rem;
+    padding: 0 1rem;
     background: var(--card-bg);
     border-radius: 12px;
     display: flex;
@@ -9,7 +9,7 @@
     white-space: nowrap;
     overflow: hidden;
     margin-bottom: 1rem;
-    font-size: 2em;
+    font-size: 1.9em;
     border: var(--style-border);
   }
   
@@ -18,62 +18,18 @@
       border-radius: 0;
     }
   }
-  
-  #category #categorybar{
-    padding: 0;
-    border: none;
-  }
-  
-  #category a.categorybar-item.select a{
-    display: none;
-  }
-  
-  .category-in-bar{
-    display: flex;
-    white-space: nowrap;
-  }
-  
-  .categorybar-tip{
-    font-weight: lighter;
-    color: var(--scrollbar);
-    margin: 0 1rem;
-  }
-  
-  .categorybar-items{
-    white-space: nowrap;
-    overflow-x: scroll;
-    display: flex;
-    align-items: center;
-  }
-  
-  
-  
-  .categorybar-items::-webkit-scrollbar{
-    display: none;
-  }
-  
-  .categorybar-item a{
-    padding: .1rem .8rem .3rem;
-    margin: .3rem .8rem;
-  }
-  
-  .categorybar-item:hover a{
-    background: var(--main);
-    color: var(--white);
+  #category #categorybar{padding:0;border:none}
+  #category a.categorybar-item.select a,.categorybar-items::-webkit-scrollbar{display:none}
+  .category-in-bar{display:flex;white-space:nowrap}
+  .categorybar-tip{display:inline-block;text-indent:-9999px;margin:0 5px;height:6%;border-right:1px solid #ddd}
+  .categorybar-items{white-space:nowrap;overflow-x:scroll;display:flex;align-items:center}
+  .categorybar-item a{padding:0 .6rem .2rem;margin: 0 1px}
+  .categorybar-item:hover a,.categorybar-item.select a{
+    background: var(--text-bg-hover);
+    color: var(--font-color);
     border-radius: 5px 5px 15px 15px;
   }
-  
-  .categorybar-item.select a {
-    background: var(--main);
-    color: var(--white);
-    border-radius: 5px 5px 15px 15px;
-  }
-  
-  .categorybar-more{
-    margin: .3rem .8rem;
-    align-self: center;
-  }
-
+  .categorybar-more{margin:.3rem .8rem;align-self:center}
 
 /* 404页面 */
 #error-wrap{
@@ -148,8 +104,6 @@
   display: block!important;
 }
 /*滚动条轨道 */
-*::-webkit-scrollbar-track,::-webkit-scrollbar-corner{background-color: transparent;}
-*::-moz-selection {color: transparent;background-color: #667eea2d;}
-html {
-  overflow-y: overlay;
-}
+*::-webkit-scrollbar-track,::-webkit-scrollbar-corner{background-color:transparent}
+*::-moz-selection{color:transparent;background-color:#667eea2d}
+html{overflow-y: overlay}
