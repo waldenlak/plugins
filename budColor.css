@@ -16,6 +16,7 @@
     --secondbg: #edf0f7;
     --card-bg: #ffffffcc;
     --card-border: #e3e8f7;
+    --text-bg-hover: rgba(226,232,255,0.7);
   }
   
   [data-theme=dark] {
@@ -28,4 +29,5 @@
     --secondbg: #30343f;
     --card-bg: #1d1b26;
     --card-border: #42444a;
+    --text-bg-hover: #383838;
   }
