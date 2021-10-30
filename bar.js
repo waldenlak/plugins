@@ -9,14 +9,14 @@ function categoriesBarActive(){
   //判断是否是首页
   if (urlinfo == '/'){
     if (document.querySelector('#categorybar')){
-      document.getElementById('home').classList.add("select")
+      document.getElementById('首页').classList.add("select")
     }
   }else {
     // 验证是否是分类链接
     var pattern = /\/categories\/.*?\//;
     var patbool = pattern.test(urlinfo);
     console.log(patbool);
-    // 获取当前的分类
+    // 获取分类组
     if (patbool) {
       var valuegroup = urlinfo.split("/");
       console.log(valuegroup[2]);
@@ -29,6 +29,34 @@ function categoriesBarActive(){
   }
   
 }
+//标签条
+function tagsBarActive(){
+  var urlinfo = window.location.pathname;
+  urlinfo = decodeURIComponent(urlinfo)
+  //console.log(urlinfo);
+  //判断是否是首页
+  if (urlinfo == '/'){
+    if (document.querySelector('#tagbar')){
+      document.getElementById('首页').classList.add("select")
+    }
+  }else {
+    // 验证是否是标签链接
+    var pattern = /\/tags\/.*?\//;
+    var patbool = pattern.test(urlinfo);
+    //console.log(patbool);
+    // 获取标签组
+    if (patbool) {
+      var valuegroup = urlinfo.split("/");
+      //console.log(valuegroup[2]);
+      // 获取当前标签
+      var nowTag = valuegroup[2];
+      if (document.querySelector('#categorybar')){
+        document.getElementById(nowTag).classList.add("select");
+      }
+    }
+  } 
+}
+tagsBarActive()
 
 //鼠标控制横向滚动
 function topCategoriesBarScroll(){
