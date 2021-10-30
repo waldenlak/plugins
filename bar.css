@@ -14,15 +14,13 @@
   }
   
   @media screen and (max-width: 768px){
-    #categorybar{
-      border-radius: 0;
-    }
+    #categorybar{border-radius: 0;}
   }
   #category #categorybar{padding:0;border:none}
   #category a.categorybar-item.select a,.categorybar-items::-webkit-scrollbar{display:none}
   .category-in-bar{display:flex;white-space:nowrap}
   .categorybar-tip{display:inline-block;text-indent:-9999px;margin:0 5px;height:6%;border-right:1px solid var(--style-border)}
-  .categorybar-items{white-space:nowrap;overflow-x:scroll;display:flex;align-items:center}
+  .categorybar-items{white-space:nowrap;width:80vw;overflow:auto;display:flex;align-items:center}
   .categorybar-item a{padding:0 .6rem .2rem;margin: 0 1px}
   .categorybar-item:hover a,.categorybar-item.select a{
     background: var(--text-bg-hover);
@@ -35,7 +33,7 @@
 #error-wrap{top: 40%;}
   #error-wrap .error-content .error-info .error_title{margin-top: -3rem!important;}
   #error-wrap .error-content{box-shadow: none!important;border-radius: 12px;background: var(--card-bg)!important;}
-  #body-wrap.error .aside-list{
+  .aside-list{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -45,17 +43,17 @@
     width: 100%;
     overflow: scroll;
   }
-  #body-wrap.error .aside-list .aside-list-group{
+  .aside-list .aside-list-group{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     max-width: 1200px;
     margin: 0 auto;
   }
-  #body-wrap.error .aside-list .aside-list-item{padding: 0.5rem;}
-  #body-wrap.error .aside-list .aside-list-item img{width: 100%;object-fit: cover;border-radius: 12px;}
-  #body-wrap.error .aside-list .aside-list-item .thumbnail{overflow: hidden;width: 230px;height: 143px;background: var(--card-bg);display: flex;}
-  #body-wrap.error .aside-list .aside-list-item .content .title{
+  .aside-list .aside-list-item{padding: 0.5rem;}
+  .aside-list .aside-list-item img{width: 100%;object-fit: cover;border-radius: 12px;}
+  .aside-list .aside-list-item .thumbnail{overflow: hidden;width: 230px;height: 143px;background: var(--card-bg);display: flex;}
+  .aside-list .aside-list-item .content .title{
     -webkit-line-clamp: 2;
     overflow: hidden;
     display: -webkit-box;
@@ -66,7 +64,7 @@
     align-content: center;
     padding-top: 0.5rem;
   }
-  #body-wrap.error .aside-list .aside-list-item .content time{display: none;}
+  .aside-list .aside-list-item .content time{display: none;}
 
 /*横竖滚动条高宽及背景*/
 *::-webkit-scrollbar{width: 8px;height: 10px;}
